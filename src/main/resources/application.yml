@@ -2,6 +2,15 @@ management:
   security:
     enable: false
 
+    server:
+      ssl:
+        key-store: classpath:keystore.jks
+        key-store-password: password
+        key-store-type: JKS
+        key-alies: linkedin
+        key-password: password
+
+
 ---
 spring :
   profiles : dev
